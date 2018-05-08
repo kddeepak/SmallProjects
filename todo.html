@@ -37,6 +37,14 @@ addbtn.onclick = function(){
 
 	list.appendChild(todoListItem);
 }
+
+ todoinput.addEventListener("keyup",function(event){
+
+ 	if(event.keyCode === 13){
+ 		addbtn.click();
+ 	}
+
+ });
 }
 
 </script>
