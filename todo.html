@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>My to do web app</title>
+
+</head>
+<body>
+
+<input id = "todoinput" placeholder="add item"><button id = "btn">add item</button>
+<br>
+<ul id ="list">
+
+	<li>task 1</li>
+
+
+</ul>
+
+<script>
+
+let todoinput = document.getElementById('todoinput');
+let addbtn = document.getElementById('btn');
+let list = document.getElementById('list');
+
+
+addbtn.onclick = function(){
+
+	if(todoinput.value==""){
+		alert("Input is vacant");
+
+	}
+	else{
+	let txt = todoinput.value;
+
+	let todoListItem = document.createElement('li');//<li></li>
+
+	todoListItem.innerText = txt;
+	todoinput.value= "";
+
+	list.appendChild(todoListItem);
+}
+}
+
+</script>
+
+
+
+</body>
+
+</html>
