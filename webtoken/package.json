@@ -1,0 +1,16 @@
+{
+  "name": "webtoken",
+  "version": "1.0.0",
+  "description": "simple passport authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "passport": "^0.4.0"
+  },
+  "author": "deepak singh",
+  "license": "ISC"
+}
